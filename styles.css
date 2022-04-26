@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: black;
+}
+
+.container {
+    max-width: 1050px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 600px;
+}
+h3.title_search {
+    font-family: 'Press Start 2P', cursive;
+    margin: 20px;
+    text-align: center;
+    color: blueviolet;
+}
+form.search {
+    display: flex;
+    width: 100%;
+    max-width: 470px;
+    margin: auto;
+    justify-content: center;
+    padding: 15px;
+}
+input.input_search {
+    border: none;
+    padding: 11px 8px;
+    width: 100%;
+    outline: none;
+    border-radius: 1px;
+    
+}
+button.button_form {
+    padding: 13px 13px;
+    border: none;
+    background-color: blueviolet;
+    color: black;
+    font-family: 'Press Start 2P';
+    cursor: pointer;
+    outline: none;
+}
+button.button_form:hover {
+    background-color: rgb(115, 32, 192);
+}
+.content_pokemon {
+    margin: 20px;
+    max-width: 500px;
+    width: 100%;
+    gap: 25px;
+    border: 1px solid;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    border-radius: 20px;
+    /* border-style: outset; */
+    /* box-shadow: 5px 4px 7px 1px white; */
+    margin: 20px auto;
+    max-height: 450px;
+}
+span.pokemon_name {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
+
+
+img.img {
+    display: flex;
+    width: 243px;
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 0px 0px 34px 0px blueviolet;
+    transition: transform .2s;
+}
+img.img:hover {
+    transform: scale(1.1);
+}
+span.alert {
+    color: white;
+
+}
+.stats {
+    margin: 22px 0px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.stats_attack, .stats_defense, .stats_speed, .stats_type {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+@media only screen and (max-width: 576px) {
+    form.search {
+        flex-direction: column;
+    }
+}
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.container_left_list, .container_right_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+li.right_list, li.left_list1, li.left_list2, li.left_list3 {
+    color: white;
+    border: 1px solid;
+    font-size: 50px;
+    border-radius: 20px;
+    width: 83px;
+    background-color: darkcyan;
+}
+
+
+
